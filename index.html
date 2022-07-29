@@ -29,48 +29,22 @@
       <p id="currentDay" class="lead"></p>
     </header>
       <!-- Timeblocks go here -->
-      <div class="container">
-        <div class="row ">
-          <div class="col-12">
-            <p>9:00 am</p>
-            <textarea>111</textarea>
+      <div class="container" id="container">
+        <div class="row" label="row" id="row">
+          <div class="col-1">
+            <p id="nine"></p>
           </div>
-          <div class="col-12">
-            <p>10:00 am</p>
-            <textarea>111</textarea>
+          <div class="col-9">
+            <textarea class="time-block" id="text"></textarea>
           </div>
-          <div class="col-12">
-            <p>11:00 am</p>
-            <textarea></textarea>
+          <div class="col-2">
+            <button class="saveBtn" id="saveButton">Save</button>
           </div>
-          <div class="col-12">
-            <p>12:00 pm</p>
-            <textarea></textarea>
-          </div>
-          <div class="col-12">
-            <p>1:00 pm</p>
-            <textarea></textarea>
-          </div>
-            <div class="col-12">
-              <p>2:00 pm</p>
-              <textarea></textarea>
-            </div>
-            <div class="col-12">
-              <p>3:00 pm</p>
-              <textarea></textarea>
-            </div>
-            <div class="col-12">
-              <p>4:00 pm</p>
-              <textarea></textarea>
-            </div>
-            <div class="col-12">
-              <p>5:00 pm</p>
-              <textarea></textarea>
-            </div>
           </div>
         </div>
+      </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
