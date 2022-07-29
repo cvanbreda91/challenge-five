@@ -11,6 +11,9 @@ $("#text").attr("id","newTextId"+[i])
 $("#saveButton").attr("id","newTextId"+[i])
 };
 
+$("#container").children().last().remove()
+
+
 var dayStart = {hour:00, minute:00}
 var dayEnd = {hour:29, minute:59}
 var nine = {hour:09, minute:00}
