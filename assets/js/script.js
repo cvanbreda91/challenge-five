@@ -8,8 +8,10 @@ $("#row").attr("id","newRowId"+[i])
         .addClass("future")
 $("#nine").attr("id","newPId"+[i])
 $("#text").attr("id","newTextId"+[i])
-$("#saveButton").attr("id","newTextId"+[i])
+$("#saveButton").attr("id","newBtnId"+[i])
 };
+
+$("#container").children().last().remove()
 
 var dayStart = {hour:00, minute:00}
 var dayEnd = {hour:29, minute:59}
@@ -168,3 +170,20 @@ else if (dateToday>=Date.today().at(four) && dateToday<Date.today().at(five)){
         $("#newRowId8").removeClass("future")
         $("#newRowId8").addClass("past")
 }
+
+
+var textNine = $("#newTextId0").val();
+var textTen = "";
+var textEleven = "";
+var textTwelve = "";
+var textOne = "";
+var textTwo = "";
+var textThree = "";
+var textFour = "";
+var textFive =  "";
+var taskAssignment ="";
+
+
+
+$("#newBtnId0").click(localStorage.setItem("taskAssignment0", JSON.stringify(textNine)))
+        
