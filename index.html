@@ -30,6 +30,7 @@
     </header>
       <!-- Timeblocks go here -->
       <form>
+        <!--Use bootstrap to create flexbox to display time, text, and save buttons-->
       <div class="container" id="container">
         <div class="row" label="row" id="row">
           <div class="col-1">
@@ -38,14 +39,16 @@
           <div class="col-7">
             <textarea class="description" id="text"></textarea>
           </div>
+<!--get save icon from font awesome and make it move to the right of it's column-->
           <div class="col-4">
-            <button class="fas fa-save saveBtn float-right" id="saveButton"></button>
+            <button class="fas fa-save saveBtn float-right align-top" id="saveButton"></button>
           </div>
           </div>
         </div>
       </div>
       </form>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--removed moment.js since it is legacy code and replaced with DateJS which is still maintained and easier to use-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
