@@ -40,10 +40,6 @@ var five = {hour:17, minute:00}
 $("#newPId8").text("5:00pm")
 var six  = {hour:18, minute:00}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c5d94c9d946391ca6125d39f935a45dd10ea4f4d
 //Create if/else if statement to change timeblock styling based on time of day
 if (dateToday>=Date.today().at(nine) && dateToday<Date.today().at(ten)){
         $("#newRowId0").removeClass("future")
@@ -181,10 +177,7 @@ else if (dateToday>=Date.today().at(five) && dateToday<Date.today().at(six)){
         $("#newRowId8").removeClass("future")
         $("#newRowId8").addClass("past")
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> c5d94c9d946391ca6125d39f935a45dd10ea4f4d
 //reset list for new day
 else if (dateToday===dayStart) {
         localStorage.clear()
