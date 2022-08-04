@@ -1,7 +1,9 @@
+//Create dynamic variables using dateJS for today's date to use at the top of the webpage and to compare to later on for timeblock style
 var dateToday = Date.today().setTimeToNow();
 var dateTodayTop = Date.today().setTimeToNow().toString("dddd, MMMM dS, yyyy");
 $('#currentDay').text(dateTodayTop);
 
+//use a for loop to create timeblock row and update attributes
 for (var i=0; i<=8; i++){
 $("#row").clone()
         .appendTo("#container")
@@ -12,8 +14,10 @@ $("#text").attr("id","newTextId"+[i])
 $("#saveButton").attr("id","newBtnId"+[i])
 };
 
+//remove extra child created by for loop
 $("#container").children().last().remove()
 
+//create variables for each hour to create conditions for timeblock styling
 var dayStart = {hour:00, minute:00}
 var dayEnd = {hour:29, minute:59}
 var nine = {hour:09, minute:00}
@@ -36,8 +40,7 @@ var five = {hour:17, minute:00}
 $("#newPId8").text("5:00pm")
 var six  = {hour:18, minute:00}
 
-
-
+//Create if/else if statement to change timeblock styling based on time of day
 if (dateToday>=Date.today().at(nine) && dateToday<Date.today().at(ten)){
         $("#newRowId0").removeClass("future")
         $("#newRowId0").addClass("present")
@@ -174,11 +177,12 @@ else if (dateToday>=Date.today().at(five) && dateToday<Date.today().at(six)){
         $("#newRowId8").removeClass("future")
         $("#newRowId8").addClass("past")
 }
-
+//reset list for new day
 else if (dateToday===dayStart) {
         localStorage.clear()
 }
 
+//create global vairables to be used for saving and retrieving from localStorage
 var toDoInput0 = "";
 var toDoInput1 = "";
 var toDoInput2 = "";
@@ -189,7 +193,7 @@ var toDoInput6 = "";
 var toDoInput7 = "";
 var toDoInput8 = "";
 
-
+//create save event for each save button to set text to localStorage
 $("#newBtnId0").on("click", function (event){
         event.preventDefault();
         toDoInput0 = $("#newTextId0").val();
@@ -244,6 +248,7 @@ $("#newBtnId8").on("click", function (event){
         localStorage.setItem("toDoInput8", JSON.stringify(toDoInput8));
 })
 
+//create a function to get items from localStorage
 function getLocalStorage(){
         toDoInput0 = JSON.parse(localStorage.getItem('toDoInput0'));
         toDoInput1 = JSON.parse(localStorage.getItem('toDoInput1'));
@@ -265,4 +270,5 @@ function getLocalStorage(){
         $("#newTextId8").val(toDoInput8);
 }
 
+//run the funtion so the text always displays after saving and refreshing
 getLocalStorage();
