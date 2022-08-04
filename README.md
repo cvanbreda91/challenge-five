@@ -27,7 +27,7 @@
 * JavaScript
 
 ## Website
-* https://cvanbreda91.github.io/challenge-five-oskar-kilo/
+https://cvanbreda91.github.io/challenge-five-oskar-kilo/
 
 ## Contribution
 Made with ❤️ by Courtney
