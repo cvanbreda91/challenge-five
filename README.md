@@ -40,3 +40,4 @@ Made with ❤️ by Courtney
 * localStorage
 
 ## Website Snapshot
+![website-image](https://github.com/cvanbreda91/challenge-five-oskar-kilo/blob/main/assets/images/website-image.png?raw=true)
