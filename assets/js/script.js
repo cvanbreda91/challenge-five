@@ -1,5 +1,6 @@
 var dateToday = Date.today().setTimeToNow();
-$('#currentDay').text(dateToday);
+var dateTodayTop = Date.today().setTimeToNow().toString("dddd, MMMM dS, yyyy");
+$('#currentDay').text(dateTodayTop);
 
 for (var i=0; i<=8; i++){
 $("#row").clone()
@@ -57,7 +58,7 @@ else if (dateToday>=Date.today().at(eleven) && dateToday<Date.today().at(twelve)
         $("#newRowId2").addClass("present")
 }
 
-else if (dateToday>=Date.today().at(eleven) && dateToday<Date.today().at(twelve)){
+else if (dateToday>=Date.today().at(twelve) && dateToday<Date.today().at(one)){
         $("#newRowId0").removeClass("future")
         $("#newRowId0").addClass("past")
         $("#newRowId1").removeClass("future")
@@ -67,19 +68,6 @@ else if (dateToday>=Date.today().at(eleven) && dateToday<Date.today().at(twelve)
         $("#newRowId3").removeClass("future")
         $("#newRowId3").addClass("present")
 }
-else if (dateToday>=Date.today().at(twelve) && dateToday<Date.today().at(one)){
-        $("#newRowId0").removeClass("future")
-        $("#newRowId0").addClass("past")
-        $("#newRowId1").removeClass("future")
-        $("#newRowId1").addClass("past")
-        $("#newRowId2").removeClass("future")
-        $("#newRowId2").addClass("past")
-        $("#newRowId3").removeClass("future")
-        $("#newRowId3").addClass("past")
-        $("#newRowId4").removeClass("future")
-        $("#newRowId4").addClass("present")
-}
-
 else if (dateToday>=Date.today().at(one) && dateToday<Date.today().at(two)){
         $("#newRowId0").removeClass("future")
         $("#newRowId0").addClass("past")
@@ -90,9 +78,7 @@ else if (dateToday>=Date.today().at(one) && dateToday<Date.today().at(two)){
         $("#newRowId3").removeClass("future")
         $("#newRowId3").addClass("past")
         $("#newRowId4").removeClass("future")
-        $("#newRowId4").addClass("past")
-        $("#newRowId5").removeClass("future")
-        $("#newRowId5").addClass("present")
+        $("#newRowId4").addClass("present")
 }
 
 else if (dateToday>=Date.today().at(two) && dateToday<Date.today().at(three)){
@@ -107,9 +93,7 @@ else if (dateToday>=Date.today().at(two) && dateToday<Date.today().at(three)){
         $("#newRowId4").removeClass("future")
         $("#newRowId4").addClass("past")
         $("#newRowId5").removeClass("future")
-        $("#newRowId5").addClass("past")
-        $("#newRowId6").removeClass("future")
-        $("#newRowId6").addClass("present")
+        $("#newRowId5").addClass("present")
 }
 
 else if (dateToday>=Date.today().at(three) && dateToday<Date.today().at(four)){
@@ -126,9 +110,7 @@ else if (dateToday>=Date.today().at(three) && dateToday<Date.today().at(four)){
         $("#newRowId5").removeClass("future")
         $("#newRowId5").addClass("past")
         $("#newRowId6").removeClass("future")
-        $("#newRowId6").addClass("past")
-        $("#newRowId7").removeClass("future")
-        $("#newRowId7").addClass("present")
+        $("#newRowId6").addClass("present")
 }
 
 else if (dateToday>=Date.today().at(four) && dateToday<Date.today().at(five)){
@@ -147,10 +129,10 @@ else if (dateToday>=Date.today().at(four) && dateToday<Date.today().at(five)){
         $("#newRowId6").removeClass("future")
         $("#newRowId6").addClass("past")
         $("#newRowId7").removeClass("future")
-        $("#newRowId7").addClass("past")
-        $("#newRowId8").removeClass("future")
-        $("#newRowId8").addClass("present")
-} else if (dateToday>Date.today().at(five)) {
+        $("#newRowId7").addClass("present")
+}
+
+ else if (dateToday>Date.today().at(five)) {
         $("#newRowId0").removeClass("future")
         $("#newRowId0").addClass("past")
         $("#newRowId1").removeClass("future")
