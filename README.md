@@ -1,12 +1,12 @@
-### Third-Party APIs Challenge: Work Day Scheduler
-# Challeng Five
+# Third-Party APIs Challenge: Work Day Scheduler
+### Challeng Five
 
 ## Assignment
-# User Story
+### User Story
 * AS AN employee with a busy schedule
 * I WANT to add important events to a daily planner
 * SO THAT I can manage my time effectively
-# Acceptance Criteria
+### Acceptance Criteria
 * GIVEN I am using a daily planner to create a schedule
 * WHEN I open the planner
 * THEN the current day is displayed at the top of the calendar
@@ -27,6 +27,7 @@
 * JavaScript
 
 ## Website
+https://cvanbreda91.github.io/challenge-five-oskar-kilo/
 
 ## Contribution
 Made with ❤️ by Courtney
@@ -39,3 +40,4 @@ Made with ❤️ by Courtney
 * localStorage
 
 ## Website Snapshot
+![website-image](https://github.com/cvanbreda91/challenge-five-oskar-kilo/blob/main/assets/images/website-image.png?raw=true)
